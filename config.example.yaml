@@ -1,0 +1,51 @@
+# AI Disk Analyzer Configuration Reference
+# Place your overrides in 'config.yaml' or pass via CLI options.
+
+general:
+  # Number of largest files/directories to report
+  top_items: 15
+  # Maximum directory traversal depth (null for unlimited)
+  max_depth: null
+  # Whether to follow symbolic links (default false for safety)
+  follow_symlinks: false
+  # Quiet mode (suppress progress indicators and banners)
+  quiet: false
+  # Verbose mode (detailed scanning logs and stack traces)
+  verbose: false
+
+scanner:
+  # Patterns to exclude from filesystem traversal
+  exclude:
+    - "**/.git/**"
+    - "**/__pycache__/**"
+    - "**/.pytest_cache/**"
+    - "**/.mypy_cache/**"
+    - "**/.ruff_cache/**"
+    - "**/.venv/**"
+    - "**/node_modules/**"
+  # Automatically exclude virtual and pseudo-filesystems when scanning /
+  exclude_system_virtual_fs: true
+
+analysis:
+  # Enable heuristic pattern classification (caches, build artifacts, etc.)
+  classify_storage: true
+  # Number of top file extensions to report
+  top_extensions_count: 10
+  # Provide evidence-based reclaimable estimates when possible
+  estimate_reclaimable: true
+
+ai:
+  # Enable Gemini AI analysis (set to false to run completely offline)
+  enabled: true
+  # Gemini model identifier
+  model: "gemini-3.8-flash"
+  # API timeout in seconds
+  timeout_seconds: 60
+  # Maximum retries for transient network/rate-limit errors
+  max_retries: 2
+
+reporting:
+  # Redact usernames and home directory prefixes in reports and prompts
+  redact_paths: true
+  # Default output format: 'terminal', 'json', or 'markdown'
+  default_format: "terminal"
