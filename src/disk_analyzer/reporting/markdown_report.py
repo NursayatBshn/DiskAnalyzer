@@ -288,3 +288,4 @@ class MarkdownReporter:
             return dest
         except OSError as exc:
             raise ReportError(f"Failed to write Markdown report to {dest}: {exc}") from exc
+

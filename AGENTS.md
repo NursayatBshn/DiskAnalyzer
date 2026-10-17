@@ -94,3 +94,4 @@ A task is complete only when:
 3. Ruff linting and format checks pass with zero errors.
 4. Documentation is updated to match any behavioral or interface changes.
 5. Git working directory remains clean of untracked secrets, caches, or build artifacts.
+

@@ -85,3 +85,4 @@ def test_empty_categories_produce_no_recommendations():
     """Verify empty category list yields empty recommendations list."""
     recs = generate_recommendations([], total_scanned_bytes=0)
     assert recs == []
+

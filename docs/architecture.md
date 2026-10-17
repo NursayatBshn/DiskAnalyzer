@@ -76,3 +76,4 @@ A core requirement of AI Disk Analyzer is distinguishing **logical file size** f
 3. **Hard Link Accounting**:
    - When multiple directory entries point to the same filesystem inode, each entry possesses the same logical size.
    - The scanner deduplicates inodes `(st_dev, st_ino)` so allocated disk space is counted only once, preventing artificial inflation of reported totals.
+

@@ -24,3 +24,4 @@ description: Testing workflow and quality assurance standards
 - **Verification Integrity**:
   - Report genuine measured test results and coverage numbers. Never fabricate or guess percentages.
   - Keep the GitHub Actions CI workflow in sync with local testing commands.
+

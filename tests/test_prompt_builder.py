@@ -30,3 +30,4 @@ def test_prompt_builder_no_redaction(sample_analysis_result: AnalysisResult):
     prompt = builder.build_prompt(sample_analysis_result)
 
     assert "/home/testuser/workspace" in prompt
+

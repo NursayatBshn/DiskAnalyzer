@@ -76,3 +76,4 @@ ruff format src tests
 3. **Keep AI Decoupled**: Deterministic scanning and analysis logic must never depend on the Gemini SDK.
 4. **Isolated Filesystem Tests**: Use `tmp_path` fixtures in tests. Never access real user home directories during unit tests.
 5. **No Breaking Changes to Read-Only Invariants**: Never add destructive deletion logic.
+

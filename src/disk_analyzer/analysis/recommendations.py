@@ -223,3 +223,4 @@ def generate_recommendations(
     priority_order = {"high": 0, "medium": 1, "low": 2}
     recs.sort(key=lambda r: priority_order.get(r.priority, 3))
     return recs
+

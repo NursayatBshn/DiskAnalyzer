@@ -49,3 +49,4 @@ reporting:
   redact_paths: true
   # Default output format: 'terminal', 'json', or 'markdown'
   default_format: "terminal"
+

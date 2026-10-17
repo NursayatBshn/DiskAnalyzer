@@ -59,3 +59,4 @@ class ReportError(DiskAnalyzerError):
 
 class FileAlreadyExistsError(ReportError):
     """Raised when attempting to write a report to an existing file without overwrite permission."""
+

@@ -15,3 +15,4 @@ description: Python code quality, typing, and style rules
 - **Path Manipulation**: Use `pathlib.Path` or `os.scandir` safely. Normalise and resolve paths appropriately while preserving user perspective for reporting.
 - **Pydantic Validation**: Use Pydantic models for configuration, AI response schemas, and exported data structures to guarantee type safety and schema validation.
 - **Documentation**: Write clear docstrings for all modules, public classes, and functions. Maintain existing documentation integrity.
+

@@ -30,3 +30,4 @@ description: Mandatory security and privacy rules for AI Disk Analyzer
 - **External Response Validation**:
   - Treat all AI responses, user inputs, and untrusted directory structures as potentially adversarial.
   - Validate AI output using strict Pydantic models before incorporating into reports.
+

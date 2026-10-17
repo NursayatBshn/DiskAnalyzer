@@ -20,3 +20,4 @@ description: Permanent architectural constraints for AI Disk Analyzer
 - **No Feature Stubs**: Never leave required features as empty placeholders, `pass` stubs, or unverified claims.
 - **Dependencies**: Keep dependencies minimal and justified (Typer, Rich, google-genai, Pydantic, PyYAML, python-dotenv). Prefer standard library modules for filesystem operations.
 - **Code Preservation**: Preserve existing working code when modifying or refactoring. Avoid circular imports and bloated modules.
+

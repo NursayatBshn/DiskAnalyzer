@@ -53,3 +53,4 @@ In this mode, no network connections are opened, and all scanning and reporting 
 - **Symlinks**: Symbolic links are not followed by default (`follow_symlinks=False`). If explicitly enabled, loop detection prevents infinite recursion.
 - **Virtual Filesystems**: Paths under `/proc`, `/sys`, `/dev`, and `/run` are automatically skipped when traversing the filesystem root to avoid blocking on pseudo-files.
 - **Report Writing**: Generated reports will not silently overwrite existing destination files unless the user explicitly passes `--overwrite`.
+

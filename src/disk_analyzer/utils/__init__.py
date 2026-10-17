@@ -8,3 +8,4 @@ from disk_analyzer.utils.formatting import (
 )
 
 __all__ = ["format_bytes", "format_duration", "mask_secret", "redact_path"]
+
